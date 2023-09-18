@@ -1,0 +1,127 @@
+:root{
+    --primarycolor: #5C5A89;
+    --secondcolor: rgb(227, 223, 235);
+    --thirdcolor: #3e3c5e;
+    --bordercolor: rgb(19, 18, 18);
+
+}
+
+body{
+    background: var(--secondcolor);
+}
+
+.logoCondoNinjas{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid 2px var(--bordercolor);
+    margin: 12px 16px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 240px;
+    height: 100%;
+    background-color: var(--primarycolor);
+    border-top-right-radius: 4%;
+    border-bottom-right-radius: 4%;
+}   
+.sidebar > header{
+    cursor: pointer;
+}
+
+.sidebar > header > span{
+    color: var(--secondcolor);
+    position: absolute;    
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.sidebar > nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar button{
+    height: 60px;    
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;    
+}
+
+.itmLista{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    height: 48px;
+    padding: 0 16px 0 12px;
+    border-radius: 24px;
+    line-height: 1;
+}
+.itmLista:hover{
+    background-color: var(--thirdcolor);
+}
+
+.itmUser{
+    background-color: var(--thirdcolor);
+}
+
+.itmLista > span{
+    color: var(--secondcolor);
+    font-weight: bold;
+}
+
+
+.main{        
+    margin-left: 250px;        
+    text-align: center;               
+}
+
+.main > h1{
+    font-size: 50px;
+    color: var(--primarycolor);
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+.main > form{
+    width: 100%;
+}
+
+.main > form > input{            
+    width: 75%;
+    height: 5rem;
+    border-radius: 5px;
+    border-style: none;
+    background-color:#c8c8d3;  
+    margin-top: 15px;   
+}
+
+.btnEnviar{
+    margin-top: 30px;
+    width: 20%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: var(--primarycolor);
+    font-weight: bold;
+    color: var(--secondcolor);
+    cursor: pointer;
+}
+
+.btnEnviar:hover{
+    transform: scale(1.2, 1.2); /*x, y*/
+}
+
+.footer{
+    margin-left: 250px;
+    font-weight: bold;
+    margin-top: 240px;
+    text-align: center;
+}

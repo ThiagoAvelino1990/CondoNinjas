@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <header>
+            <img src="./assests/logo_prov.png" alt="Logo CondoNinjas" class="logoCondoNinjas">
+            <span>Usuário</span>
+        </header>
+        <nav>
+            <button>
+                <span class="itmLista">
+                    <img src="./assests/home.png" alt="logo_home">
+                    <span>Home</span>
+                </span>
+            </button>
+
+            <button>
+                <span class="itmLista itmUser">
+                    <img src="./assests/user.png" alt="logo_usuario">
+                    <span>Usuário</span>
+                </span>
+            </button>
+
+            <button>
+                <span class="itmLista">
+                    <img src="./assests/encomendas.png" alt="logo_encomendas"> 
+                    <span>Encomendas</span>
+                </span>
+            </button>
+
+            <button>
+                <span class="itmLista">
+                    <img src="./assests/multas.png" alt="logo_multas">
+                    <span>Multas</span>
+                </span>
+            </button>
+
+            <button>
+                <span class="itmLista">
+                    <img src="./assests/sair.png" alt="logo_sair">
+                    <span>Sair</span>
+                </span>
+            </button>
+        </nav>
+    </aside>
+
+    <main class ="main">
+        <h1>Cadastro de usuário</h1>        
+        <form method="get">                
+            <input class="formularioNome" type="text" name="nome" placeholder="Nome" />
+            
+            <input class="formularioDoc" type="text" name="documento" placeholder="Documento" />
+            
+            <input class="formularioEmail" type="email" name="email" placeholder="Email" />
+            
+            <input class="formularioTel" type="tel" name="telefone" placeholder="Telefone" />
+            
+            <input class="formularioEnd" type="text" name="endereco" placeholder="Endereço" />                
+            <br>
+            <div class="divbtnEnviar" onclick="submit()">
+                <input class ="btnEnviar" type="button" name="enviar" value="Enviar" />
+            </div>
+            
+        </form>        
+        
+    </main>
+    <footer class="footer">&copy;CondoNinjas</footer>
+    <script src="./js/cadastro-usuario.js"></script>
+</body>
+</html>
